@@ -1,0 +1,49 @@
+{
+  "name": "vite_electron",
+  "private": true,
+  "version": "0.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "nodemon --exec electron .",
+    "app:dist": "electron-builder"
+  },
+  "dependencies": {
+    "image-type": "^4.1.0",
+    "got": "^11.8.5",
+    "pinia": "^2.0.34",
+    "randomstring": "^1.2.3",
+    "responselike": "^2.0.0",
+    "store2": "^2.14.2",
+    "stylus": "^0.59.0",
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "electron": "^24.1.2",
+    "electron-builder": "^23.1.0",
+    "electron-devtools-installer": "^3.2.0",
+    "electron-win-state": "^1.1.22",
+    "nodemon": "^2.0.22",
+    "rimraf": "^4.4.1",
+    "throttle-debounce": "^5.0.0",
+    "vite": "^4.2.0",
+    "vite-plugin-electron": "^0.11.1"
+  },
+  "build": {
+    "productName": "WebFloow",
+    "appId": "bianchengsanmei",
+    "directories": {
+      "output": "build"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "dmg": {
+      "backgroundColor": "#fff"
+    }
+  }
+}
